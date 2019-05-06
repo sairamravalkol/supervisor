@@ -15,19 +15,14 @@ export interface Employee {
 export class NavigatorComponent implements OnInit {
   selectedValue:string;
   selectedOption:string;
-  
+  gabBal="10 Hrs"
 
   
   
-  employees: Employee[] = [
-    { value: 'john', viewValue: 'John', associate:['sai','ram','krish','nandu']},
-    { value: 'krish', viewValue: 'Krish', associate:['jocky','wills','keats'] },
-    { value: 'smith', viewValue: 'Smith' , associate:['smith','johnny']}
-  ];
-  message: string="Helloworld";
   
-  constructor(private data:DataService) {
-    this.data.message = "Hello World";
+  
+  constructor() {
+   
   }
 
   ngOnInit() {
